@@ -21,3 +21,10 @@ test("Should return Buzz if divide by 5", () => {
   expect(fizzBuzz(50)).toBe("Buzz");
   expect(fizzBuzz(100)).toBe("Buzz");
 });
+
+test("Should return FizzBuzz if divide by 3 and 5", () => {
+  expect(fizzBuzz(15)).toBe("FizzBuzz");
+  expect(fizzBuzz(30)).toBe("FizzBuzz");
+  expect(fizzBuzz(45)).toBe("FizzBuzz");
+  expect(fizzBuzz(90)).toBe("FizzBuzz");
+});
