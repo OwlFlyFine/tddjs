@@ -6,7 +6,12 @@ export const isBuzz = (number) => {
   return number % 5 === 0;
 };
 
+export const isNumber = (number) => {
+  return typeof number === "number";
+};
+
 export const fizzBuzz = (number) => {
+  if (!isNumber(number)) throw new Error("Parameter not a number.");
   if (isFizz(number) && isBuzz(number)) return "FizzBuzz";
   if (isFizz(number)) return "Fizz";
   if (isBuzz(number)) return "Buzz";
